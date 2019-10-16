@@ -12,11 +12,11 @@ Jenkins是一个开源软件项目，是基于Java开发的一种持续集成工
 
 ## 安装 java 环境
 
-1.rpm 包下载地址<br/>
+1.jdk-rpm 包下载地址<br/>
 https://www.oracle.com/java/technologies/jdk8-downloads.html
   
 2.安装命令<br/>
-rpm -ivh 包
+rpm -ivh "jak-...."
   
 3.看是否安装成功命令<br/>
 java -version
@@ -44,7 +44,7 @@ java -jar jenkins.war
 
 ## Jenkins初始化
 1.jenkins的默认端口是8080,启动成功后在浏览器打开。<br/>
-2.进入后会让我们输管理员密码，打开网页上提示路径下的文件，复制密码粘贴输入即可。<br/>
+2.进入后会让我们输管理员密码，cat /var/lib/jenkins/secrets/initialAdminPassword ，复制密码粘贴输入即可。<br/>
 3.然后会让安装需要的插件，此处选默认即可，等待安装完成。<br/>
 4.创建一个管理员账户。<br/>
 5.上面都完成后会看到这个界面。<br/>
